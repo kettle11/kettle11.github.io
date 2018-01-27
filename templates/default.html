@@ -6,7 +6,6 @@
 		<h1>{{.Title}}</h1>
 		{{.Body}}
 		<p>
-			Other pages:
 			{{range (ByDate Content.posts)}}
 				<br>
 				<a href="{{RelPath .}}"> {{.Title}} </a>
