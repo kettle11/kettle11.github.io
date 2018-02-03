@@ -107,6 +107,7 @@
 .sidebararticles a:link {
     text-decoration: none;
     transition:color 0.3s ease;
+    color:white;
 }
 
 .sidebararticles a:visited {
