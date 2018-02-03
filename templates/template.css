@@ -45,6 +45,7 @@
     display:flex;
     flex-direction: column;
     display: inline-block;
+    padding-right:50px;
 }
 
 .title:hover .underline {
@@ -54,7 +55,7 @@
 
 .title:hover .ianjk {
     left:50%;
-    margin-left:-60px;
+    margin-left:-85px;
     color:white;
 }
 
