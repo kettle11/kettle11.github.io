@@ -1,0 +1,184 @@
+.ianjk {
+    letter-spacing:.02em;
+    font-size: 1.6em;
+    font-family: PlayfairDisplay-Black;
+    color:#202020;
+    top: 46px;
+    position:absolute;
+    transition:all ease 0.4s;
+    background:transparent;
+    height:70px;
+    text-align: center;
+    line-height: 76px;
+    z-index: 12;
+    left:140px;
+    width:120px;
+}
+
+.underline {
+    position:absolute;
+    left:0px;
+    top:0px;
+    height:100%;
+    width:100%;
+    border-bottom-style: solid;
+    border-color: #202020;
+    border-width:2px;
+    transition:all ease 0.4s;
+}
+
+.holder {
+    opacity: 0;
+    visibility: hidden;
+    position:relative;
+    transition:opacity 0.4s ease, visibility 0.4s ease-out, width 0s ease-out .4s;
+    width:0px;
+}
+
+
+.title {
+    top:0;
+    left:0;
+    position:fixed;
+    z-index: 10;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    display: inline-block;
+}
+
+.title:hover .underline {
+    border-color:white;
+    transform: scaleX(.3);
+}
+
+.title:hover .ianjk {
+    left:50%;
+    margin-left:-60px;
+    color:white;
+}
+
+.title:hover .holder {
+    width:400px;
+    visibility: visible;
+    opacity: 1;
+    transition: width 0s ease-out .0s, opacity 0.4s ease;
+}
+
+.sidebar {
+    top:0px;
+    display:block;
+    height:100%;
+    width:100%;
+}
+
+.sidebarbackdrop {
+    color:white;
+    background-color:#202020;
+    position: absolute;
+    width:100%;
+    top:0px;
+    bottom:0px;
+}
+
+.sidebarcontent {
+    color: white;
+    margin-top:125px;
+    padding: 20px;
+    text-align: center;
+    font: 20px/1.4 'helvetica neue','Segoe UI',roboto;
+}
+
+.sidebararticles {
+    list-style-type: none;
+    color: white;
+    padding: 0px;
+    font: 25px/1 'helvetica neue','Segoe UI',roboto;
+}
+
+.sidebararticles li {
+    height:40px;
+    margin-bottom: 10px;
+    line-height: 40px;
+    width:100%;
+    text-align: center;
+}
+
+.sidebararticles a:link {
+    text-decoration: none;
+    transition:color 0.3s ease;
+}
+
+.sidebararticles a:visited {
+    text-decoration: none;
+    color:white;
+}
+
+.sidebararticles a:hover {
+    color: #666666;
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: darkslategrey;
+
+}
+
+/* Body text stuff */
+.contentcontainer {
+    display: flex;
+    justify-content: center;
+    height:100%;
+}
+
+.content {
+    padding:25px;
+    margin:0px;
+    max-width: 720px;
+    font: 20px/1.4 'helvetica neue','Segoe UI',roboto;
+    color: #202020;
+    margin: 0;
+}
+
+p {
+    margin:0;
+    margin-bottom: 70px;
+
+    animation: fadein .8s;
+    animation-timing-function: ease;
+    animation-delay: .425s;
+    animation-fill-mode:forwards;
+    opacity: 0;
+}
+
+h1 {
+    margin-top:50px;
+    margin-bottom: 20px;
+    font-size: 40;
+
+    opacity: 0;
+    animation: fadein .8s;
+    animation-timing-function: ease;
+    animation-delay: .2s;
+    animation-fill-mode:forwards;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+h2 {
+    font-size: 30;
+    margin-bottom: 15px;
+
+    animation: fadein .8s;
+    animation-timing-function: ease;
+    animation-delay: .425s;
+    animation-fill-mode:forwards;
+    opacity: 0;
+}
