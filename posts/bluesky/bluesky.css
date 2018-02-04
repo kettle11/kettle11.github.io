@@ -11,3 +11,8 @@ html, body {
 .underline {
     border-color:white;
 }
+
+canvas {
+    width:100vw;
+    height:100vh;
+}

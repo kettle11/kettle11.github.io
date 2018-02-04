@@ -141,7 +141,7 @@ body::-webkit-scrollbar-thumb {
     padding:25px;
     margin:0px;
     max-width: 720px;
-    font: 20px/1.4 'helvetica neue','Segoe UI',roboto;
+    font: 20px/1.4 'Georgia', 'helvetica neue','Segoe UI',roboto;
     color: #202020;
     margin: 0;
 }
@@ -161,7 +161,7 @@ h1 {
     margin-top:50px;
     margin-bottom: 20px;
     font-size: 40;
-
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     opacity: 0;
     animation: fadein .8s;
     animation-timing-function: ease;
@@ -177,10 +177,17 @@ h1 {
 h2 {
     font-size: 30;
     margin-bottom: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
     animation: fadein .8s;
     animation-timing-function: ease;
     animation-delay: .425s;
     animation-fill-mode:forwards;
     opacity: 0;
+}
+
+img {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width:100%;
 }
