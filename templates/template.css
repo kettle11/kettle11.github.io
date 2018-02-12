@@ -191,3 +191,15 @@ img {
     padding-bottom: 40px;
     width:100%;
 }
+
+.footer {
+    height:100px;
+}
+
+.footerdate {
+    float:left;
+}
+
+.footerauthor {
+    float:right;
+}
