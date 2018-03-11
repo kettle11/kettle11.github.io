@@ -166,6 +166,7 @@ figcaption {
     object-fit: cover;
     max-width: max-content;
     width:100%;
+    height:700px;
 }
 
 .full-width figcaption {
