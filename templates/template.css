@@ -159,6 +159,7 @@ figcaption {
     padding:20px;
     padding-right: 0px;
     opacity: .7;
+    line-height: 1.4em;
 }
 
 .full-width img {
