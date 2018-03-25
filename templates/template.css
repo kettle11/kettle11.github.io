@@ -1,12 +1,12 @@
 .header {
-    height: 95px;
+    height: 130px;
     width:100vw;
     background-color: #fcfcfc;
     border-bottom-style: solid;
     border-color: #f2f2f2;
     border-width:2px;
     font: 20px/1.4 'Georgia', 'helvetica neue','Segoe UI',roboto;
-    line-height: 35px;
+    line-height: 0px;
     display:flex;
     align-content: center;
     justify-content: center;
@@ -19,7 +19,6 @@
     margin-right:20px;
     text-align: center;
     color:#8e8e8e;
-
 }
 
 .ianjk {
@@ -38,6 +37,16 @@
     opacity: 1;
 }
 
+.headerlink {
+    padding: 20px;
+    text-decoration: none;
+    color:#8e8e8e;
+}
+
+.headerlink a {
+    text-decoration: none;
+    color:inherit;
+}
 
 @media only screen and (max-width: 720px) { 
     .content {
@@ -49,7 +58,8 @@
     margin:0px;
     max-width: 720px;
     width: 720px;
-    font: 20px/1.4 'Georgia', 'helvetica neue','Segoe UI',roboto;
+    font: 20px/1.5 'Georgia', 'helvetica neue','Segoe UI',roboto;
+    font-family: OpenSans;
     color: #202020;
     margin: 0;
     margin-left:20px;
@@ -191,7 +201,6 @@ body {
     text-decoration-skip: none;
     text-decoration-skip-ink: none;
     overflow-x:hidden;
-
 }
 
 .left {
