@@ -81,16 +81,15 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: center;
     width:100vw;
+    animation: fadein .8s;
+    animation-timing-function: ease;
+    animation-delay: .10s;
+    animation-fill-mode:forwards;
+    opacity: 0;
 }
 
 p {
     margin:0;
-
-    animation: fadein .8s;
-    animation-timing-function: ease;
-    animation-delay: .425s;
-    animation-fill-mode:forwards;
-    opacity: 0;
 }
 
 h1 {
@@ -99,11 +98,6 @@ h1 {
     margin-bottom: 10px;
     font-size: 35;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    opacity: 0;
-    animation: fadein .8s;
-    animation-timing-function: ease;
-    animation-delay: .2s;
-    animation-fill-mode:forwards;
 }
 
 @keyframes fadein {
@@ -116,11 +110,6 @@ h2 {
     margin-bottom: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    animation: fadein .8s;
-    animation-timing-function: ease;
-    animation-delay: .425s;
-    animation-fill-mode:forwards;
-    opacity: 0;
 }
 
 img {
