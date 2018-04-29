@@ -2,7 +2,7 @@
     height: 120px;
     width:100vw;
     border-width:2px;
-    font: 20px/1.4  'helvetica neue','Segoe UI',roboto;
+    font: 1em/1.4  'helvetica neue','Segoe UI',roboto;
     line-height: 100%;
     display:flex;
     align-content: center;
@@ -21,21 +21,6 @@
     justify-content: center;
 }
 
-.ianjk {
-    line-height: 95px;
-    height:300px;
-    text-align:center;
-    letter-spacing:.02em;
-    font-size: 1.5em;
-    font-family: PlayfairDisplay-Black;
-    color:#353535;
-    text-decoration: none;
-    width:100%;
-}
-
-.ianjk:hover {
-    opacity: 1;
-}
 
 .headerlink {
     padding: 20px;
@@ -48,32 +33,16 @@
     color:inherit;
 }
 
-@media only screen and (max-width: 720px) { 
-    .content {
-        width:100%
-    }
-}
-
 .content {
-    margin:0px;
-    max-width: 720px;
-    width: 720px;
-    font: 20px/1.5 'Georgia', 'helvetica neue','Segoe UI',roboto;
+    width: 760px;
+    font: 1.1em/1.5 'Georgia', 'helvetica neue','Segoe UI',roboto;
     font-family: OpenSans;
     color: #202020;
-    margin: 0;
-    margin-left:20px;
-    margin-right:20px;
-}
-
-body::-webkit-scrollbar {
-  width: 1em;
-  background: transparent;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: darkslategrey;
-
+    animation: fadein .8s;
+    animation-timing-function: ease;
+    animation-delay: .10s;
+    animation-fill-mode:forwards;
+    opacity: 0;
 }
 
 /* Body text stuff */
@@ -81,11 +50,8 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: center;
     width:100vw;
-    animation: fadein .8s;
-    animation-timing-function: ease;
-    animation-delay: .10s;
-    animation-fill-mode:forwards;
-    opacity: 0;
+    overflow:hidden;
+    box-sizing:border-box;
 }
 
 p {
@@ -95,8 +61,15 @@ p {
 h1 {
     text-align: center;
     margin-bottom: 10px;
-    font-size: 35;
+    font-size: 2em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
 }
 
 @keyframes fadein {
@@ -104,19 +77,8 @@ h1 {
     to   { opacity: 1; }
 }
 
-h2 {
-    font-size: 30;
-    margin-bottom: 15px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-}
-
-img {
-    width:100%;
-}
-
 .footer {
-    height:200px;
+    padding-bottom: 100px;
 }
 
 .footerdate {
@@ -134,7 +96,8 @@ img {
 
 figure {
     margin:0px;
-    padding-bottom: 10px;
+    padding-top:30px;
+    padding-bottom: 30px;
     line-height: 0;
     left:0px;
     width:100%;
@@ -151,6 +114,28 @@ figure img {
     max-width: 100%;
 }
 
+@media only screen and (max-width: 1000px) { 
+    .content {
+        width:100%;
+    }
+
+    .contentcontainer {
+        padding-left:7vw;
+        padding-right:7vw;
+    }
+
+    figure img {
+        width:100vw;
+        max-width:none;
+        max-height: none;
+        margin-left: -7vw;
+    }
+
+    body {
+        font-size: 40px;
+    }
+}
+
 figcaption {
     text-align:center;
     font-size:.8em;
@@ -159,29 +144,6 @@ figcaption {
     opacity: .7;
     line-height: 1.4em;
 }
-
-.full-width img {
-    max-height:80vh;
-    object-fit: cover;
-    max-width: max-content;
-    width:100%;
-    height:700px;
-}
-
-.full-width figcaption {
-    margin-right:50px;
-    text-align:right;
-}
-.full-width {
-    width: 101vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    padding:0px;
-    object-fit: cover;
-  }
 
 body {
     margin:0px;
