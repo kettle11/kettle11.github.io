@@ -1,12 +1,9 @@
 .header {
-    height: 130px;
+    height: 120px;
     width:100vw;
-    background-color: #fcfcfc;
-    border-bottom-style: solid;
-    border-color: #f2f2f2;
     border-width:2px;
-    font: 20px/1.4 'Georgia', 'helvetica neue','Segoe UI',roboto;
-    line-height: 0px;
+    font: 20px/1.4  'helvetica neue','Segoe UI',roboto;
+    line-height: 100%;
     display:flex;
     align-content: center;
     justify-content: center;
@@ -19,6 +16,9 @@
     margin-right:20px;
     text-align: center;
     color:#8e8e8e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .ianjk {
@@ -40,7 +40,7 @@
 .headerlink {
     padding: 20px;
     text-decoration: none;
-    color:#8e8e8e;
+    color:#bbbbbb;
 }
 
 .headerlink a {
@@ -94,7 +94,6 @@ p {
 
 h1 {
     text-align: center;
-    margin-top:50px;
     margin-bottom: 10px;
     font-size: 35;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -135,8 +134,7 @@ img {
 
 figure {
     margin:0px;
-    padding-bottom: 30px;
-    padding-top: 30px;
+    padding-bottom: 10px;
     line-height: 0;
     left:0px;
     width:100%;
@@ -147,8 +145,8 @@ figure img {
     border-bottom-style: solid;
     border-color: #f2f2f2;
     border-width:2px;
-    max-height: 500px;
     width:auto;
+    max-height:700px;
     max-width: 100%;
 }
 
