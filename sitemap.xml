@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
-            <loc>http://127.0.0.1:1111/</loc>
+            <loc>https://ianjk.com/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:1111/about/</loc>
+            <loc>https://ianjk.com/about/</loc>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:1111/vr-for-everyone/</loc>
+            <loc>https://ianjk.com/vr-for-everyone/</loc>
             
                 <lastmod>2018-04-28</lastmod>
             
