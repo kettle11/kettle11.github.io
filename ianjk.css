@@ -1,0 +1,130 @@
+@font-face {
+     src: url(fonts/Inter-ExtraBold.woff);
+     font-family: Inter;
+     font-weight: 800;
+}
+
+@font-face { 
+    src: url(fonts/Inter-SemiBold.woff);
+    font-family: Inter;
+    font-weight: 600;
+}
+
+@font-face { 
+    src: url(fonts/Inter-Regular.woff);
+    font-family: Inter;
+    font-weight: normal;
+}
+
+html {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 2.5em;
+    letter-spacing: -0.01em;
+}
+
+.title {
+    width: 75%;
+    line-height: 1.25em;
+}
+
+.spacer {
+    height: 2em;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h2, h3 {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-family: Inter, sans-serif;
+    line-height: normal;
+    font-size: 2em;
+    font-weight: normal;
+}
+
+
+.date {
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: #89989D;
+    margin-bottom: 0.5em;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    max-width: 40rem;
+    padding: 1em;
+    margin: auto;
+}
+
+p {
+    margin-block-start: 0.5em;
+}
+
+figure {
+    display: block;
+    max-width: 100%;
+    margin: 2em 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+figcaption {
+    font-weight: 500;
+    font-size: 0.75em;
+    letter-spacing: -0.01em;
+    color: #89989D;
+    margin: 0.5em 0;
+}
+
+.blog_list {
+    padding: 0;
+    list-style-type: none;
+}
+
+
+.IK {
+    font-weight: 800;
+    font-size: 1.5rem;
+    line-height: 100%;
+    float: left;
+}
+
+hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    opacity: 0.5;
+}
+
+.IK:visited {
+    color: inherit;
+}
+
+.about {
+    font-weight: 500;
+    color: #c5c5c5;
+    float: right;
+}
+
+.title_in_list {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: -0.01em;
+}
